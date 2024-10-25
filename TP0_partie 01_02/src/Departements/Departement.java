@@ -1,4 +1,4 @@
-package Word;
+package Departements;
 
 import java.util.ArrayList;
 
