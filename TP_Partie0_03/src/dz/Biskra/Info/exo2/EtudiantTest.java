@@ -1,13 +1,13 @@
 package dz.Biskra.Info.exo2;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class EtudiantTest {
+class EtudiantTest {
 
 	@Test
-	public void testCalculerMoyenne() {
+	void testCalculerMoyenne() {
 		fail("Not yet implemented");
 	}
 
