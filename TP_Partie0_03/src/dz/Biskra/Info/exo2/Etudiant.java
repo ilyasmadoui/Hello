@@ -22,13 +22,19 @@ public class Etudiant {
         this.adressePostale = adressePostale;
     }
     
-    //method noter 
+    public Etudiant(List<Object> emptyList) {}
+
+	//method noter 
     public void noter (Matiere matiere,double nombre) {
     	Note novelle = new Note(matiere, nombre);
     	notes.add(novelle);
     }
     
-    public double calculerMoyenne(double moyenne) {
+    public double calculerMoyenne() {
+    	if(notes.isEmpty()){
+    		return 0.0;
+    	}
+    	
     	double sommefinal=0;
     	double sommeNotes = 0;
     	double sommecoefficient = 0 ;

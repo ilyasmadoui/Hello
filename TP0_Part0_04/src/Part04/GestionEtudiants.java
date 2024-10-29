@@ -20,7 +20,6 @@ public class GestionEtudiants {
 		toto.setDateDeNaissance(LocalDate.of(2002,Month.DECEMBER, 11));
 		toto.setPrenom("Anis");
 		toto.setAdresse("99, av. Zaatcha, 07000 Biskra");
-		toto.setEmail(null);
 		toto.setEmail("AnisBenAli@gmail.com");
 		
 		
