@@ -30,16 +30,16 @@ class EtudiantTest {
 	@Test
 	void test_calcul_moyenne_retourne_valeur_note_pondérée_quand_une_seule_note_avec_coefficient() {
 		Etudiant etud = new Etudiant (Arrays.asList(new Note(new Matiere("Phizic", 2),15.0)));
-		assertEquals(15.0, etud.calculerMoyenne(),0.001);
+		assertEquals(30.0, etud.calculerMoyenne(),0.001);
 	}
 	
 	@Test
 	void testCalculerMoyenne_retourneMoyenneQuandPlusieursNotesAvecDifferentsCoefficients() {
         Etudiant etudiant = new Etudiant(Arrays.asList(
-                new Note(new Matiere("Science",3), 2),
-                new Note(new Matiere("Sport",3), 3),
-                new Note(new Matiere("Arabe",3), 5)
+                new Note(new Matiere("Science",3),11.0),
+                new Note(new Matiere("Sport",1), 19.0),
+                new Note(new Matiere("Arabe",2), 15.0)
         ));
-        assertEquals(15.0, etudiant.calculerMoyenne(), 0.0001);
+        assertEquals(80.0, etudiant.calculerMoyenne(), 0.0001);
     }
 }

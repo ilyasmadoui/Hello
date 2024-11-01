@@ -25,10 +25,7 @@ public class EtudiantTelescopique {
     }
     
     public String toString() {
-		return "Nom:" + this.nom + "\n" +
-			   "Prenom:" + this.prenom + "\n" +
-			   "dateN:" + this.nom + "\n" +
-			   "email:" + this.nom + "\n" ;	
+        return "Etudiant [nom=" + nom + ", prenom=" + prenom + ", dateN=" + dateN + ", email=" + email + "]";
     }
 
 }
