@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author PRO
- *
- */
-module Hello {
-}
